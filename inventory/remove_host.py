@@ -30,13 +30,16 @@ options:
     required: true
 notes:
     - This module bypasses the play host loop and only runs once for all the hosts in the play, if you need it
-      to iterate use a with\_ directive.
+      to iterate use a C(with_) directive.
 author:
     - "James Pic"
 '''
 
 EXAMPLES = '''
 # remove host 'foo'
-- add_host:
+- remove_host:
     name: foo
+'''
+
+RETURN = '''
 '''
